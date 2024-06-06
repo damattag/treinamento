@@ -1,3 +1,3 @@
-import LogoCITi from "./Logo.png";
+import LogoCITi from "./Logo.svg";
 
 export { LogoCITi };

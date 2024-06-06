@@ -1,3 +1,10 @@
+import { Barlow } from "next/font/google";
+
+export const barlow = Barlow({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+});
+
 export default {
   colors: {
     background: "#292929",

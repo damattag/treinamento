@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { barlow } from "styles/theme";
 
 export const HomeContainer = styled.div`
   width: 100vw;
@@ -7,31 +8,30 @@ export const HomeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  gap: 32px;
+`;
+
+export const FormContainer = styled.form`
+  display: flex;
   flex-direction: column;
+  align-items: center;
 
-  h1 {
-    font-size: 54px;
-    color: ${(props) => props.theme.colors.primary};
-    margin-top: 40px;
-    text-align: center;
+  gap: 32px;
 
-    @media (max-width: 720px) {
-      font-size: 28px;
-    }
-  }
+  padding: 56px 80px;
+  border-radius: 12px;
 
-  p {
-    font-size: 20px;
-    margin-top: 24px;
-    line-height: 32px;
+  border: 2px solid #58cbfb;
 
-    @media (max-width: 720px) {
-      font-size: 16px;
-      margin-top: 0;
-    }
-  }
+  background-color: #d2effe;
+`;
 
-  img {
-    width: 25%;
-  }
+export const FormDescription = styled.p`
+  font-family: ${barlow.style.fontFamily};
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+
+  text-align: center;
 `;

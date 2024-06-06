@@ -1,3 +1,3 @@
-import { BlueButton } from './Button';
+import ControlledTextInput from "./text_input";
 
-export { BlueButton };
+export { ControlledTextInput };
